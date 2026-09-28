@@ -6,6 +6,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 import javafx.scene.control.RadioButton;
 import javafx.scene.control.ToggleGroup;
+import javafx.scene.layout.HBox;
 import javafx.stage.Stage;
 
 
@@ -46,6 +47,13 @@ public class App extends Application {
         smallButton.setToggleGroup(sizeGroup);
         mediumButton.setToggleGroup(sizeGroup);
         largeButton.setToggleGroup(sizeGroup);
+        
+        HBox sizeBox = new HBox(10);
+        sizeBox.getChildren().add(smallButton);
+        sizeBox.getChildren().add(mediumButton);
+        sizeBox.getChildren().add(largeButton);
+        
+        
     }
 
     public static void main(String[] args) {
