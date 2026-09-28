@@ -4,6 +4,7 @@ import javafx.application.Application;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
+import javafx.scene.control.RadioButton;
 import javafx.stage.Stage;
 
 
@@ -35,7 +36,10 @@ public class App extends Application {
         quantityBox.getItems().add(8);
         quantityBox.getItems().add(9);
         quantityBox.getItems().add(10);
-
+        
+        RadioButton smallButton = new RadioButton("Small");
+        RadioButton mediumButton = new RadioButton("Medium");
+        RadioButton largeButton = new RadioButton("Large");
     }
 
     public static void main(String[] args) {
