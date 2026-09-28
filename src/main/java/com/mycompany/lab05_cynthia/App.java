@@ -8,6 +8,7 @@ import javafx.scene.control.ListView;
 import javafx.scene.control.RadioButton;
 import javafx.scene.control.ToggleGroup;
 import javafx.scene.layout.HBox;
+import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 
@@ -83,6 +84,15 @@ public class App extends Application {
             largeButton.setSelected(false);
             resultLabel.setText("");
         });
+        
+        VBox root = new VBox(10);
+        root.getChildren().add(titleLabel);
+        root.getChildren().add(bagLabel);
+        root.getChildren().add(bagList);
+        root.getChildren().add(quantityLabel);
+        root.getChildren().add(quantityBox);
+        root.getChildren().add(sizeLabel);
+        root.getChildren().add(sizeBox);
 
     }
 
