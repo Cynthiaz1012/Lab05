@@ -15,6 +15,7 @@ import javafx.stage.Stage;
 
 /**
  * JavaFX App
+ * GitHub link: https://github.com/Cynthiaz1012/Lab05_Task1
  */
 public class App extends Application {
 
@@ -105,7 +106,6 @@ public class App extends Application {
        primaryStage.setTitle("Bag Order Form");
        primaryStage.setScene(scene);
        primaryStage.show();
-           
     }
 
     public static void main(String[] args) {
