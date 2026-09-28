@@ -93,7 +93,12 @@ public class App extends Application {
         root.getChildren().add(quantityBox);
         root.getChildren().add(sizeLabel);
         root.getChildren().add(sizeBox);
-
+  
+       HBox buttonBox = new HBox(10);
+       buttonBox.getChildren().add(orderButton);
+       buttonBox.getChildren().add(clearButton);
+       root.getChildren().add(buttonBox);
+           
     }
 
     public static void main(String[] args) {
