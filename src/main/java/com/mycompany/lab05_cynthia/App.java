@@ -5,6 +5,7 @@ import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 import javafx.scene.control.RadioButton;
+import javafx.scene.control.ToggleGroup;
 import javafx.stage.Stage;
 
 
@@ -40,6 +41,11 @@ public class App extends Application {
         RadioButton smallButton = new RadioButton("Small");
         RadioButton mediumButton = new RadioButton("Medium");
         RadioButton largeButton = new RadioButton("Large");
+        
+        ToggleGroup sizeGroup = new ToggleGroup();
+        smallButton.setToggleGroup(sizeGroup);
+        mediumButton.setToggleGroup(sizeGroup);
+        largeButton.setToggleGroup(sizeGroup);
     }
 
     public static void main(String[] args) {
