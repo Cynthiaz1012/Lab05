@@ -75,6 +75,14 @@ public class App extends Application {
             
             resultLabel.setText("You ordered " + quantity + " " + size + " " + bag + " Bags.");          
         });
+        
+        clearButton.setOnAction(event -> {
+            quantityBox.setValue(null);
+            smallButton.setSelected(false);
+            mediumButton.setSelected(false);
+            largeButton.setSelected(false);
+            resultLabel.setText("");
+        });
 
     }
 
