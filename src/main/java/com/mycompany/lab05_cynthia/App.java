@@ -1,6 +1,7 @@
 package com.mycompany.lab05_cynthia;
 
 import javafx.application.Application;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
@@ -18,7 +19,7 @@ import javafx.stage.Stage;
 public class App extends Application {
 
     @Override
-    public void start(Stage stage) {
+    public void start(Stage primaryStage) {
         Label titleLabel = new Label("Bag Order");
         
         ListView<String> bagList = new ListView<>();
@@ -98,6 +99,12 @@ public class App extends Application {
        buttonBox.getChildren().add(orderButton);
        buttonBox.getChildren().add(clearButton);
        root.getChildren().add(buttonBox);
+       
+       root.getChildren().add(resultLabel);
+       Scene scene = new Scene(root, 450, 600);
+       primaryStage.setTitle("Bag Order Form");
+       primaryStage.setScene(scene);
+       primaryStage.show();
            
     }
 
