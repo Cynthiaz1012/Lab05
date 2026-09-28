@@ -1,6 +1,7 @@
 package com.mycompany.lab05_cynthia;
 
 import javafx.application.Application;
+import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 import javafx.stage.Stage;
@@ -23,6 +24,18 @@ public class App extends Application {
         bagList.getItems().add("Leather");
         bagList.getItems().add("Plain");
         
+        ComboBox<Integer> quantityBox = new ComboBox<>();
+        quantityBox.getItems().add(1);
+        quantityBox.getItems().add(2);
+        quantityBox.getItems().add(3);
+        quantityBox.getItems().add(4);
+        quantityBox.getItems().add(5);
+        quantityBox.getItems().add(6);
+        quantityBox.getItems().add(7);
+        quantityBox.getItems().add(8);
+        quantityBox.getItems().add(9);
+        quantityBox.getItems().add(10);
+
     }
 
     public static void main(String[] args) {
