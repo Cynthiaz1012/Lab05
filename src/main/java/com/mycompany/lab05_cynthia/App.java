@@ -1,6 +1,7 @@
 package com.mycompany.lab05_cynthia;
 
 import javafx.application.Application;
+import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
@@ -53,7 +54,12 @@ public class App extends Application {
         sizeBox.getChildren().add(mediumButton);
         sizeBox.getChildren().add(largeButton);
         
-        
+        Label bagLabel = new Label("Choose a bag:");
+        Label quantityLabel = new Label("Quantity:");
+        Label sizeLabel = new Label("Size:");
+        Button orderButton = new Button("Order");
+        Button clearButton = new Button("Clear");
+        Label resultLabel = new Label("");        
     }
 
     public static void main(String[] args) {
