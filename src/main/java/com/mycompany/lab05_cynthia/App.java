@@ -59,7 +59,23 @@ public class App extends Application {
         Label sizeLabel = new Label("Size:");
         Button orderButton = new Button("Order");
         Button clearButton = new Button("Clear");
-        Label resultLabel = new Label("");        
+        Label resultLabel = new Label("");  
+        
+        orderButton.setOnAction(event -> {
+            String bag = bagList.getSelectionModel().getSelectedItem();
+            Integer quantity = quantityBox.getValue();
+            String size = "";
+            if (smallButton.isSelected()) {
+                size = "Small";
+            } else if (mediumButton.isSelected()) {
+                size = "Medium";
+            } else if (largeButton.isSelected()) {
+                size = "Large";
+            }
+            
+            resultLabel.setText("You ordered " + quantity + " " + size + " " + bag + " Bags.");          
+        });
+
     }
 
     public static void main(String[] args) {
